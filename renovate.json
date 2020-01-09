@@ -1,49 +1,30 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "npm": {
-    "schedule": [
-      "after 9pm",
-      "before 9am"
-    ],
+    "schedule": ["after 9pm", "before 9am"],
     "rangeStrategy": "bump",
-    "postUpdateOptions": [
-      "yarnDedupeFewer"
-    ],
+    "postUpdateOptions": ["yarnDedupeFewer"],
     "lockFileMaintenance": {
       "enabled": true,
-      "schedule": [
-        "before 6am on the first day of the month"
-      ]
-    }, 
+      "schedule": ["before 6am on the first day of the month"]
+    },
     "packageRules": [
       {
         "groupName": "React and ReactDOM",
-        "packageNames": [
-          "react",
-          "react-dom"
-        ]
+        "packageNames": ["react", "react-dom"]
       },
       {
         "groupName": "ESLint and Prettier",
-        "packageNames": [
-          "eslint",
-          "prettier"
-        ]
+        "packageNames": ["eslint", "prettier"],
+        "packagePatterns": ["^eslint-config-", "^eslint-plugin-", "^@typescript-eslint/"]
       },
       {
-        "updateTypes": [
-          "pin",
-          "digest"
-        ],
+        "updateTypes": ["pin", "digest"],
         "automerge": true
       },
       {
         "description": "Disable package.json > engines update",
-        "depTypeList": [
-          "engines"
-        ],
+        "depTypeList": ["engines"],
         "enabled": false
       }
     ]
