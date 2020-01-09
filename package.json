@@ -6,7 +6,10 @@
   "author": "ryo ikeura",
   "license": "MIT",
   "private": false,
-  "devDependencies": {},
+  "devDependencies": {}, 
+  "engines": {
+    "yarn": "1.17.3"
+  },
   "dependencies": {
     "eslint": "^6.8.0",
     "gatsby": "^2.18.20",
