@@ -17,7 +17,7 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "gatsby": "^2.18.20",
-    "husky": "^4.0.3",
+    "husky": "^4.0.4",
     "lint-staged": "^9.5.0",
     "mobx": "^5.15.1",
     "next": "^9.1.7",
